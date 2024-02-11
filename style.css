@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    margin: 50px; /* Adjust margin for mobile and tablet display */
+    background-color: rgb(3, 65, 152);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem;
+    font-size: 8vmin;
+    background-color: rgb(251, 251, 251);
+    color: black;
+}
+
+#res-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem;
+    margin: 1rem; /* Add margin for better spacing */
+}
+
+#res-btn {
+    background-color: yellowgreen;
+    font-weight: 600;
+}
+
+#new-btn {
+    background-color: rgb(21, 184, 3);
+}
+
+#msg {
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 100vh; /* Adjust height for mobile and tablet display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem; /* Adjust gap for better spacing */
+}
+
+.hide {
+    display: none;
+}
+
+/* Media Queries for tablet and mobile */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .container {
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
+    }
+
+    .game {
+        height: 50vmin; /* Adjust height for smaller screens */
+        width: 50vmin; /* Adjust width for smaller screens */
+    }
+
+    .box {
+        height: 12vmin; /* Adjust height for smaller screens */
+        width: 12vmin; /* Adjust width for smaller screens */
+        font-size: 5vmin; /* Adjust font-size for smaller screens */
+    }
+
+    #msg {
+        font-size: 5vmin; /* Adjust font-size for smaller screens */
+    }
+
+    .msg-container {
+        gap: 2rem; /* Adjust gap for smaller screens */
+    }
+}
