@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white; /* Text color */
+    font-size: 2rem; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 20px; /* Bottom margin */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Letter spacing */
+}
+
+
+body {
+    margin: 50px;
+    background-color: rgb(3, 56, 87);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem;
+    font-size: 8vmin;
+    background-color: rgb(251, 251, 251);
+    color: black;
+}
+
+#res-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem;
+    margin: 1rem;
+}
+
+#res-btn {
+    background-color: yellowgreen;
+    font-weight: 600;
+}
+
+#new-btn {
+    background-color: rgb(21, 184, 3);
+}
+
+#msg {
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .game {
+        height: 50vmin;
+        width: 50vmin;
+    }
+
+    .box {
+        height: 12vmin;
+        width: 12vmin;
+        font-size: 5vmin;
+    }
+
+    #msg {
+        font-size: 5vmin;
+    }
+
+    .msg-container {
+        gap: 2rem;
+    }
+}
+/* Existing styles... */
+
+#res-btn {
+    display: block; /* Make the reset button a block element */
+    margin-bottom: 1rem; /* Add margin at the bottom to separate from the other buttons */
+    margin: auto;
+}
+
+#ai-btn,
+#friends-btn {
+    display: inline-block; /* Make the AI and Friends buttons inline-block */
+    margin: 0 1rem; /* Add margin to separate the buttons */
+    vertical-align: middle; /* Align the buttons vertically */
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem;
+}
+
+#ai-btn:hover,
+#friends-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 1.5rem rgba(0, 123, 255, 0.5);
+}
+
+#ai-btn:focus,
+#friends-btn:focus {
+    outline: none;
+}
